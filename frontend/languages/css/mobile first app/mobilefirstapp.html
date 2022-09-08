@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <style>
+
+.item{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+
+@media (max-width:300px){
+    #item-1{
+        background-color: green;
+        display: block;
+    }
+}   
+@media (min-width: 301px) and (max-width: 600px){
+    #item-2{
+        background-color: purple;
+        display: block;
+    }
+}
+@media (min-width: 601px) and (max-width: 900px){
+    #item-3{
+        background-color: red;
+        display: block;
+    }
+}  
+@media (min-width: 901px){
+    #item-4{
+        background-color: yellow;
+        display: block;
+    }
+}
+        </style>
+        <div id="parent">
+        <div class="item" id="item-1">Screen up 300px</div>
+        <div class="item" id="item-2">Sreen from 301 to 600px</div>
+        <div class="item" id="item-3">Screen from 601 to 900px</div>
+        <div class="item" id="item-4">Screen from 901px to as big as much</div>
+        <script src="" async defer></script>
+    </body>
+</html>
